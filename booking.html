@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Mobile Repair | NYC Mobile Care</title>
+    <meta name="description" content="Book your phone repair online with NYC Mobile Care. Fast, affordable, and professional mobile repair service in Manhattan.">
+    <meta name="keywords" content="online mobile repair booking nyc, iphone repair booking, same day phone repair nyc">
+    <meta name="author" content="NYC Mobile Care">
+    <meta property="og:title" content="Book Mobile Repair | NYC Mobile Care">
+    <meta property="og:description" content="Book your phone repair online with NYC Mobile Care. Fast, affordable, and professional mobile repair service in Manhattan.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nycmobilecare.com/booking.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Book Mobile Repair | NYC Mobile Care">
+    <meta name="twitter:description" content="Book your phone repair online with NYC Mobile Care. Fast, affordable, and professional mobile repair service in Manhattan.">
+    <link rel="canonical" href="https://nycmobilecare.com/booking.html">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+    /* Inline critical CSS to prevent blank page */
+    html {
+        scroll-behavior: smooth;
+    }
+    * {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    .glassmorphism {
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .glassmorphism-dark {
+        background: rgba(37, 99, 235, 0.1);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(37, 99, 235, 0.2);
+    }
+    .gradient-bg {
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    }
+    .text-shadow {
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+    .hover-lift {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .hover-lift:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    .nav-link {
+        position: relative;
+        transition: all 0.3s ease;
+    }
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -4px;
+        left: 50%;
+        background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+        transition: all 0.3s ease;
+        transform: translateX(-50%);
+    }
+    .nav-link:hover::after {
+        width: 100%;
+    }
+    /* Fixed fade-in animation - visible by default, then animate in */
+    .fade-in {
+        animation: fadeInUp 0.8s cubic-bezier(0.4,0,0.2,1) forwards;
+    }
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    /* Loading fallback */
+    .loading {
+        opacity: 0;
+    }
+    .loaded {
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+    }
+    </style>
+</head>
+<body class="bg-white min-h-screen flex flex-col loaded">
+    <header class="glassmorphism w-full top-0 z-50 shadow-xl border-b border-white/20">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="h-10 w-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
+                    <span class="text-white font-bold text-sm">NMC</span>
+                </div>
+                <h1 class="text-2xl font-bold text-gray-900 text-shadow tracking-tight">
+                    <span class="text-blue-600">NYC</span> Mobile Care
+                </h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="nyc_mobile_care.html#home" class="nav-link text-gray-800 hover:text-blue-600 font-medium px-3 py-2 transition-colors">Home</a></li>
+                    <li><a href="nyc_mobile_care.html#services" class="nav-link text-gray-800 hover:text-blue-600 font-medium px-3 py-2 transition-colors">Services</a></li>
+                    <li><a href="nyc_mobile_care.html#contact" class="nav-link text-gray-800 hover:text-blue-600 font-medium px-3 py-2 transition-colors">Contact</a></li>
+                    <li><a href="booking.html" class="nav-link text-blue-600 font-semibold px-3 py-2 transition-colors active">Booking</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="flex-1 flex items-center justify-center py-12 px-4 fade-in">
+        <div class="w-full max-w-lg bg-white rounded-3xl shadow-xl p-8 glassmorphism">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-blue-700 mb-2">Book Your Repair Online</h2>
+            <h3 class="text-lg sm:text-xl text-center text-gray-800 mb-2 font-semibold">Select your service, preferred time, and choose pickup or walk-in.</h3>
+            <div class="text-gray-600 text-center mb-6 text-base">
+                <ul class="list-disc list-inside text-left mx-auto max-w-xs">
+                    <li>Fill in your contact and device details.</li>
+                    <li>Choose your preferred date and time.</li>
+                    <li>Select if you want <span class="font-semibold text-blue-600">free pickup</span> (Manhattan) or <span class="font-semibold text-blue-600">walk-in</span> service.</li>
+                    <li>We'll confirm your booking by phone or email.</li>
+                </ul>
+            </div>
+            <form class="space-y-5" id="bookingForm" autocomplete="off">
+                <!-- Service List with Checkboxes and Prices -->
+                <div>
+                    <h4 class="text-xl font-bold text-blue-700 mb-2 text-center">Select Service(s)</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                        <label class="flex items-center bg-blue-50 rounded-lg px-3 py-2 cursor-pointer">
+                            <input type="checkbox" name="services[]" value="iPhone Screen Replacement ($99–$179)" class="service-checkbox mr-2" data-min="99" data-max="179">
+                            iPhone Screen Replacement <span class="ml-auto text-blue-700 font-semibold">$99–$179</span>
+                        </label>
+                        <label class="flex items-center bg-blue-50 rounded-lg px-3 py-2 cursor-pointer">
+                            <input type="checkbox" name="services[]" value="Samsung Screen Replacement ($89–$169)" class="service-checkbox mr-2" data-min="89" data-max="169">
+                            Samsung Screen Replacement <span class="ml-auto text-blue-700 font-semibold">$89–$169</span>
+                        </label>
+                        <label class="flex items-center bg-blue-50 rounded-lg px-3 py-2 cursor-pointer">
+                            <input type="checkbox" name="services[]" value="Battery Replacement ($49–$89)" class="service-checkbox mr-2" data-min="49" data-max="89">
+                            Battery Replacement <span class="ml-auto text-blue-700 font-semibold">$49–$89</span>
+                        </label>
+                        <label class="flex items-center bg-blue-50 rounded-lg px-3 py-2 cursor-pointer">
+                            <input type="checkbox" name="services[]" value="Water Damage Repair ($79–$149)" class="service-checkbox mr-2" data-min="79" data-max="149">
+                            Water Damage Repair <span class="ml-auto text-blue-700 font-semibold">$79–$149</span>
+                        </label>
+                        <label class="flex items-center bg-blue-50 rounded-lg px-3 py-2 cursor-pointer">
+                            <input type="checkbox" name="services[]" value="Charging Port Replacement ($59–$99)" class="service-checkbox mr-2" data-min="59" data-max="99">
+                            Charging Port Replacement <span class="ml-auto text-blue-700 font-semibold">$59–$99</span>
+                        </label>
+                        <label class="flex items-center bg-blue-50 rounded-lg px-3 py-2 cursor-pointer">
+                            <input type="checkbox" name="services[]" value="Speaker/Mic Repair ($39–$69)" class="service-checkbox mr-2" data-min="39" data-max="69">
+                            Speaker/Mic Repair <span class="ml-auto text-blue-700 font-semibold">$39–$69</span>
+                        </label>
+                        <label class="flex items-center bg-blue-50 rounded-lg px-3 py-2 cursor-pointer">
+                            <input type="checkbox" name="services[]" value="Software/Unlocking Service ($49–$79)" class="service-checkbox mr-2" data-min="49" data-max="79">
+                            Software/Unlocking Service <span class="ml-auto text-blue-700 font-semibold">$49–$79</span>
+                        </label>
+                        <label class="flex items-center bg-blue-50 rounded-lg px-3 py-2 cursor-pointer">
+                            <input type="checkbox" name="services[]" value="Diagnostic Check (Free)" class="service-checkbox mr-2" data-min="0" data-max="0">
+                            Diagnostic Check <span class="ml-auto text-green-600 font-semibold">Free</span>
+                        </label>
+                    </div>
+                    <div id="serviceError" class="text-red-600 text-xs mt-1 hidden">Please select at least one service.</div>
+                </div>
+                <!-- Add-Ons Section (Below Service List) -->
+                <div>
+                    <h4 class="text-lg font-bold text-blue-700 mb-2 text-center">Add‑Ons</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                        <label class="flex items-center bg-green-50 rounded-lg px-3 py-2 cursor-pointer">
+                            <input type="checkbox" name="addons[]" value="Screen Protector (+$10)" class="addon-checkbox mr-2" data-price="10">
+                            Screen Protector <span class="ml-auto text-blue-700 font-semibold">+$10</span>
+                        </label>
+                        <label class="flex items-center bg-green-50 rounded-lg px-3 py-2 cursor-pointer">
+                            <input type="checkbox" name="addons[]" value="Phone Cover Bundle (+$15*)" class="addon-checkbox mr-2" data-price="15">
+                            Phone Cover Bundle <span class="ml-auto text-blue-700 font-semibold">+$15*</span>
+                        </label>
+                    </div>
+                    <div class="text-xs text-gray-500 mt-1">*Bundle includes select covers. Ask for available options.</div>
+                </div>
+                <!-- Device Model -->
+                <div>
+                    <label class="block text-gray-700 font-medium mb-1" for="device">Device Brand & Model</label>
+                    <select id="device" name="device" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        <option value="">Select Device</option>
+                        <option>iPhone 15 Pro</option>
+                        <option>iPhone 14/13/12/11/X/8/7</option>
+                        <option>Samsung Galaxy S24/S23/S22/S21</option>
+                        <option>Google Pixel 8/7/6</option>
+                        <option>Other Android</option>
+                        <option>Tablet/iPad</option>
+                        <option>Other (specify in instructions)</option>
+                    </select>
+                </div>
+                <!-- Preferred Date & Time -->
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <div class="flex-1">
+                        <label class="block text-gray-700 font-medium mb-1" for="date">Preferred Date</label>
+                        <input type="date" id="date" name="date" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    </div>
+                    <div class="flex-1">
+                        <label class="block text-gray-700 font-medium mb-1" for="time">Preferred Time</label>
+                        <input type="time" id="time" name="time" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    </div>
+                </div>
+                <!-- Service Type (Radio) -->
+                <div>
+                    <label class="block text-gray-700 font-medium mb-1">Service Type</label>
+                    <div class="flex gap-6">
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="serviceType" value="Walk-in" class="mr-2" checked>
+                            Walk‑in
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="serviceType" value="Pickup & Delivery" class="mr-2">
+                            Pickup & Delivery
+                        </label>
+                    </div>
+                </div>
+                <!-- Pickup Address (Conditional) -->
+                <div id="pickupAddressField" class="hidden">
+                    <label class="block text-gray-700 font-medium mb-1" for="pickupAddress">Pickup Address <span class="text-xs text-gray-500">(Required for Pickup & Delivery)</span></label>
+                    <input type="text" id="pickupAddress" name="pickupAddress" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Enter pickup address">
+                </div>
+                <!-- Special Instructions / Problem Description (Optional) -->
+                <div>
+                    <label class="block text-gray-700 font-medium mb-1" for="instructions">Special Instructions / Problem Description <span class="text-xs text-gray-500">(Optional)</span></label>
+                    <textarea id="instructions" name="instructions" rows="3" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Describe your issue or any special requests"></textarea>
+                </div>
+                <!-- Customer Name -->
+                <div>
+                    <label class="block text-gray-700 font-medium mb-1" for="name">Customer Name</label>
+                    <input type="text" id="name" name="name" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Your Name">
+                    <div id="nameError" class="text-red-600 text-xs mt-1 hidden">Name is required.</div>
+                </div>
+                <!-- Email & Phone -->
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <div class="flex-1">
+                        <label class="block text-gray-700 font-medium mb-1" for="email">Email</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="you@email.com">
+                        <div id="emailError" class="text-red-600 text-xs mt-1 hidden">Valid email is required.</div>
+                    </div>
+                    <div class="flex-1">
+                        <label class="block text-gray-700 font-medium mb-1" for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="e.g. (212) 555-7890">
+                        <div id="phoneError" class="text-red-600 text-xs mt-1 hidden">Phone number is required.</div>
+                    </div>
+                </div>
+                <!-- Estimated Total -->
+                <div class="mt-3 text-right">
+                    <span class="font-semibold text-gray-900">Estimated Total: </span>
+                    <span id="totalPrice" class="font-bold text-blue-700 text-lg">$0</span>
+                </div>
+                <!-- Final Submit Button -->
+                <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold py-3 rounded-xl shadow-lg hover:scale-105 transition-all duration-300">Submit Booking</button>
+            </form>
+            <div id="bookingConfirmation" class="hidden mt-8">
+                <div class="glassmorphism-dark rounded-2xl p-6 sm:p-8 w-full max-w-2xl mx-auto text-center shadow-lg">
+                    <!-- Success Header -->
+                    <div class="mb-6">
+                        <div class="text-5xl mb-4">✅</div>
+                        <div class="text-2xl sm:text-3xl text-blue-700 font-bold mb-2">Thank you, <span id="confName">Customer</span>!</div>
+                        <div class="text-base sm:text-lg text-gray-900 font-semibold mb-4">Your <span id="confService">Service</span> <span id="confPrice">($0)</span> is booked for <span id="confTime">Time</span>.</div>
+                        <div id="confPickup" class="text-sm sm:text-base text-blue-700 font-medium mb-4 hidden bg-blue-50 rounded-lg p-3">📍 Pickup scheduled from <span id="confPickupAddr"></span>.</div>
+                    </div>
+                    
+                    <!-- Live Booking Status Component -->
+                    <div class="my-8 bg-white/50 rounded-xl p-4">
+                        <h3 class="text-base font-semibold text-gray-800 mb-4">Booking Status</h3>
+                        <!-- Desktop Status Bar -->
+                        <div class="hidden sm:flex items-center justify-center space-x-2 lg:space-x-4 mb-3">
+                            <div class="flex flex-col items-center">
+                                <div id="statusIconPending" class="h-8 w-8 rounded-full flex items-center justify-center bg-blue-500 text-white"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+                                <span class="text-xs mt-1 font-semibold text-blue-600">Pending</span>
+                            </div>
+                            <div class="h-1 w-6 lg:w-8 bg-blue-200 rounded"></div>
+                            <div class="flex flex-col items-center">
+                                <div id="statusIconInProgress" class="h-8 w-8 rounded-full flex items-center justify-center bg-gray-300 text-gray-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 8v4l3 3"/></svg></div>
+                                <span class="text-xs mt-1 font-semibold text-gray-500">In Progress</span>
+                            </div>
+                            <div class="h-1 w-6 lg:w-8 bg-gray-200 rounded"></div>
+                            <div class="flex flex-col items-center">
+                                <div id="statusIconCompleted" class="h-8 w-8 rounded-full flex items-center justify-center bg-gray-300 text-gray-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                                <span class="text-xs mt-1 font-semibold text-gray-500">Completed</span>
+                            </div>
+                            <div class="h-1 w-6 lg:w-8 bg-gray-200 rounded"></div>
+                            <div class="flex flex-col items-center">
+                                <div id="statusIconReady" class="h-8 w-8 rounded-full flex items-center justify-center bg-gray-300 text-gray-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>
+                                <span class="text-xs mt-1 font-semibold text-gray-500">Ready</span>
+                            </div>
+                        </div>
+                        <!-- Mobile Status - Simplified -->
+                        <div class="sm:hidden flex justify-center mb-3">
+                            <div class="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-semibold">Pending Confirmation</div>
+                        </div>
+                        <div class="text-sm text-gray-600 font-medium" id="liveStatusText">Status: Pending - We'll contact you to confirm details</div>
+                    </div>
+                    
+                    <!-- Contact Information -->
+                    <div class="bg-blue-50 rounded-xl p-4 mb-6">
+                        <div class="text-sm text-gray-700 mb-2">📧 A confirmation email will be sent shortly</div>
+                        <div class="text-sm text-gray-700">📱 We'll call or text you to confirm your booking</div>
+                    </div>
+                    
+                    <!-- Action Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-3 justify-center">
+                        <a href="booking.html" class="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">📅 Book Another</a>
+                        <a href="nyc_mobile_care.html#home" class="bg-white text-blue-600 border-2 border-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-blue-50 transition-all duration-300">🏠 Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-gray-50 py-8 mt-12 border-t border-gray-200">
+        <div class="container mx-auto px-6 text-center text-gray-600">
+            &copy; 2025 NYC Mobile Care. All rights reserved. <br>
+            <a href="nyc_mobile_care.html#home" class="text-blue-600 hover:underline transition-colors">Home</a> |
+            <a href="nyc_mobile_care.html#services" class="text-blue-600 hover:underline transition-colors">Services</a> |
+            <a href="nyc_mobile_care.html#contact" class="text-blue-600 hover:underline transition-colors">Contact</a> |
+            <a href="booking.html" class="text-blue-600 hover:underline font-semibold transition-colors">Booking</a> |
+            <a href="/sitemap.xml" class="text-blue-600 hover:underline transition-colors">Sitemap</a>
+        </div>
+    </footer>
+    <script>
+    // Error handling and console logging for debugging
+    window.addEventListener('error', function(e) {
+        console.error('JavaScript Error:', e.error);
+    });
+    
+    // Booking Form UX & Validation
+    // Live Booking Status Logic
+    function setBookingStatus(status) {
+        try {
+            // status: 'Pending', 'In Progress', 'Completed', 'Ready'
+            const statusMap = {
+                'Pending': {
+                    icons: ['statusIconPending'],
+                    color: 'text-blue-200',
+                    text: 'Status: Pending'
+                },
+                'In Progress': {
+                    icons: ['statusIconPending','statusIconInProgress'],
+                    color: 'text-yellow-200',
+                    text: 'Status: In Progress'
+                },
+                'Completed': {
+                    icons: ['statusIconPending','statusIconInProgress','statusIconCompleted'],
+                    color: 'text-green-200',
+                    text: 'Status: Completed'
+                },
+                'Ready': {
+                    icons: ['statusIconPending','statusIconInProgress','statusIconCompleted','statusIconReady'],
+                    color: 'text-green-300',
+                    text: 'Status: Ready for Pickup/Delivery'
+                }
+            };
+            // Reset all icons
+            ['statusIconPending','statusIconInProgress','statusIconCompleted','statusIconReady'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) {
+                    el.classList.remove('bg-blue-500','text-white','bg-yellow-400','bg-green-500','text-blue-600','text-yellow-600','text-green-600','bg-green-700');
+                    el.classList.add('bg-gray-700','text-gray-400');
+                }
+            });
+            // Highlight current status
+            if (statusMap[status]) {
+                statusMap[status].icons.forEach(id => {
+                    const el = document.getElementById(id);
+                    if (el) {
+                        el.classList.remove('bg-gray-700','text-gray-400');
+                        el.classList.add('bg-blue-500','text-white');
+                    }
+                });
+                const statusText = document.getElementById('liveStatusText');
+                if (statusText) {
+                    statusText.textContent = statusMap[status].text;
+                    statusText.className = 'mt-2 text-sm font-medium ' + statusMap[status].color;
+                }
+            }
+        } catch (error) {
+            console.error('Error in setBookingStatus:', error);
+        }
+    }
+    
+    // Wait for DOM to be fully loaded
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('DOM Content Loaded - Initializing booking form...');
+        
+        try {
+            // Get all required elements
+            const walkinRadio = document.querySelector('input[name="serviceType"][value="Walk-in"]');
+            const pickupRadio = document.querySelector('input[name="serviceType"][value="Pickup & Delivery"]');
+            const pickupAddressField = document.getElementById('pickupAddressField');
+            const pickupAddressInput = document.getElementById('pickupAddress');
+            const bookingForm = document.getElementById('bookingForm');
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const phoneInput = document.getElementById('phone');
+            const serviceCheckboxes = document.querySelectorAll('.service-checkbox');
+            const addonCheckboxes = document.querySelectorAll('.addon-checkbox');
+            const totalPriceSpan = document.getElementById('totalPrice');
+            const nameError = document.getElementById('nameError');
+            const emailError = document.getElementById('emailError');
+            const phoneError = document.getElementById('phoneError');
+            const serviceError = document.getElementById('serviceError');
+
+            // Verify all elements exist
+            if (!bookingForm) {
+                console.error('Booking form not found!');
+                return;
+            }
+            
+            console.log('All form elements found, initializing functionality...');
+
+            // Set default booking status to Pending on confirmation show
+            if (document.getElementById('bookingConfirmation')) {
+                setBookingStatus('Pending');
+            }
+
+            // Pickup field toggle function
+            function togglePickupField() {
+                try {
+                    if (pickupRadio && pickupRadio.checked) {
+                        if (pickupAddressField) pickupAddressField.classList.remove('hidden');
+                        if (pickupAddressInput) pickupAddressInput.setAttribute('required', 'required');
+                    } else {
+                        if (pickupAddressField) pickupAddressField.classList.add('hidden');
+                        if (pickupAddressInput) pickupAddressInput.removeAttribute('required');
+                    }
+                } catch (error) {
+                    console.error('Error in togglePickupField:', error);
+                }
+            }
+            
+            // Add event listeners for radio buttons
+            if (walkinRadio) walkinRadio.addEventListener('change', togglePickupField);
+            if (pickupRadio) pickupRadio.addEventListener('change', togglePickupField);
+            togglePickupField(); // Initialize
+
+            // Price Calculation
+            function updateTotal() {
+                try {
+                    let minTotal = 0, maxTotal = 0;
+                    serviceCheckboxes.forEach(cb => {
+                        if (cb.checked) {
+                            const min = parseInt(cb.getAttribute('data-min')) || 0;
+                            const max = parseInt(cb.getAttribute('data-max')) || 0;
+                            minTotal += min;
+                            maxTotal += max;
+                        }
+                    });
+                    addonCheckboxes.forEach(cb => {
+                        if (cb.checked) {
+                            const price = parseInt(cb.getAttribute('data-price')) || 0;
+                            minTotal += price;
+                            maxTotal += price;
+                        }
+                    });
+                    let priceText = minTotal === maxTotal ? `$${minTotal}` : `$${minTotal}–$${maxTotal}`;
+                    if (totalPriceSpan) {
+                        totalPriceSpan.textContent = priceText;
+                    }
+                } catch (error) {
+                    console.error('Error in updateTotal:', error);
+                }
+            }
+            
+            // Add event listeners for price calculation
+            serviceCheckboxes.forEach(cb => cb.addEventListener('change', updateTotal));
+            addonCheckboxes.forEach(cb => cb.addEventListener('change', updateTotal));
+            updateTotal(); // Initialize
+
+            // Email validation function
+            function validateEmail(email) {
+                return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+            }
+            
+            // Form submission handler
+            if (bookingForm) {
+                bookingForm.addEventListener('submit', function(e) {
+                    console.log('Form submission started...');
+                    e.preventDefault(); // Always prevent default first
+                    
+                    try {
+                        let valid = true;
+                        
+                        // Name validation
+                        if (!nameInput || !nameInput.value.trim()) {
+                            if (nameError) nameError.classList.remove('hidden');
+                            valid = false;
+                        } else {
+                            if (nameError) nameError.classList.add('hidden');
+                        }
+                        
+                        // Email validation
+                        if (!emailInput || !validateEmail(emailInput.value.trim())) {
+                            if (emailError) emailError.classList.remove('hidden');
+                            valid = false;
+                        } else {
+                            if (emailError) emailError.classList.add('hidden');
+                        }
+                        
+                        // Phone validation
+                        if (!phoneInput || !phoneInput.value.trim()) {
+                            if (phoneError) phoneError.classList.remove('hidden');
+                            valid = false;
+                        } else {
+                            if (phoneError) phoneError.classList.add('hidden');
+                        }
+                        
+                        // Service selection validation
+                        let serviceChecked = false;
+                        serviceCheckboxes.forEach(cb => { if (cb.checked) serviceChecked = true; });
+                        if (!serviceChecked) {
+                            if (serviceError) serviceError.classList.remove('hidden');
+                            valid = false;
+                        } else {
+                            if (serviceError) serviceError.classList.add('hidden');
+                        }
+                        
+                        // Date & Time validation
+                        const date = document.getElementById('date');
+                        const time = document.getElementById('time');
+                        if (!date || !date.value) {
+                            if (date) date.classList.add('border-red-500');
+                            valid = false;
+                        } else {
+                            if (date) date.classList.remove('border-red-500');
+                        }
+                        if (!time || !time.value) {
+                            if (time) time.classList.add('border-red-500');
+                            valid = false;
+                        } else {
+                            if (time) time.classList.remove('border-red-500');
+                        }
+                        
+                        // Pickup address validation if needed
+                        if (pickupRadio && pickupRadio.checked && (!pickupAddressInput || !pickupAddressInput.value.trim())) {
+                            if (pickupAddressInput) pickupAddressInput.classList.add('border-red-500');
+                            valid = false;
+                        } else {
+                            if (pickupAddressInput) pickupAddressInput.classList.remove('border-red-500');
+                        }
+                        
+                        if (!valid) {
+                            console.log('Form validation failed');
+                            return false;
+                        }
+                        
+                        console.log('Form validation passed, processing submission...');
+                        
+                        // Gather booking data
+                        const customerName = nameInput.value.trim();
+                        
+                        // Get selected services and calculate price
+                        let selectedServices = [];
+                        let minTotal = 0, maxTotal = 0;
+                        serviceCheckboxes.forEach(cb => {
+                            if (cb.checked) {
+                                selectedServices.push(cb.parentElement.textContent.trim());
+                                const min = parseInt(cb.getAttribute('data-min')) || 0;
+                                const max = parseInt(cb.getAttribute('data-max')) || 0;
+                                minTotal += min;
+                                maxTotal += max;
+                            }
+                        });
+                        addonCheckboxes.forEach(cb => {
+                            if (cb.checked) {
+                                selectedServices.push(cb.parentElement.textContent.trim());
+                                const price = parseInt(cb.getAttribute('data-price')) || 0;
+                                minTotal += price;
+                                maxTotal += price;
+                            }
+                        });
+                        
+                        // Format service name and price
+                        let serviceName = selectedServices.length > 0 ? selectedServices[0].split('$')[0].trim() : 'Service';
+                        let priceText = minTotal === maxTotal ? `$${minTotal}` : `$${minTotal}–$${maxTotal}`;
+                        
+                        // Format date and time
+                        let dateVal = date ? date.value : '';
+                        let timeVal = time ? time.value : '';
+                        let dateObj = dateVal ? new Date(dateVal) : null;
+                        let dateStr = dateObj ? dateObj.toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' }) : '';
+                        let timeStr = timeVal ? timeVal : '';
+                        
+                        // Pickup information
+                        let pickup = pickupRadio ? pickupRadio.checked : false;
+                        let pickupAddr = pickup && pickupAddressInput ? pickupAddressInput.value.trim() : '';
+
+                        // Create booking data object
+                        const bookingData = {
+                            name: customerName,
+                            email: emailInput ? emailInput.value.trim() : '',
+                            phone: phoneInput ? phoneInput.value.trim() : '',
+                            device: document.getElementById('device') ? document.getElementById('device').value : '',
+                            services: selectedServices,
+                            price: priceText,
+                            date: dateStr,
+                            time: timeStr,
+                            pickup: pickup,
+                            pickupAddress: pickupAddr,
+                            instructions: document.getElementById('instructions') ? document.getElementById('instructions').value.trim() : '',
+                        };
+                        
+                        console.log('Booking data:', bookingData);
+                        
+                        // Simulated backend integration (replace with real API calls)
+                        fetch('https://httpbin.org/post', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({
+                                to: 'admin@nycmobilecare.com',
+                                subject: 'New Booking Received',
+                                booking: bookingData
+                            })
+                        }).catch(() => {
+                            console.log('Simulated admin email sent (failed gracefully)');
+                        });
+
+                        // Fill confirmation details
+                        const confName = document.getElementById('confName');
+                        const confService = document.getElementById('confService');
+                        const confPrice = document.getElementById('confPrice');
+                        const confTime = document.getElementById('confTime');
+                        const confPickup = document.getElementById('confPickup');
+                        const confPickupAddr = document.getElementById('confPickupAddr');
+                        
+                        if (confName) confName.textContent = customerName;
+                        if (confService) confService.textContent = serviceName;
+                        if (confPrice) confPrice.textContent = priceText;
+                        if (confTime) confTime.textContent = `${timeStr}${dateStr ? ' on ' + dateStr : ''}`;
+                        
+                        if (pickup && pickupAddr && confPickup && confPickupAddr) {
+                            confPickup.classList.remove('hidden');
+                            confPickupAddr.textContent = pickupAddr;
+                        } else if (confPickup) {
+                            confPickup.classList.add('hidden');
+                        }
+                        
+                        // Show confirmation, hide form
+                        bookingForm.classList.add('hidden');
+                        const bookingConfirmation = document.getElementById('bookingConfirmation');
+                        if (bookingConfirmation) {
+                            bookingConfirmation.classList.remove('hidden');
+                        }
+                        
+                        console.log('Booking submission completed successfully!');
+                        
+                    } catch (error) {
+                        console.error('Error during form submission:', error);
+                        alert('An error occurred while processing your booking. Please try again.');
+                    }
+                });
+            }
+            
+            // Smooth scroll for hash links
+            document.querySelectorAll('a[href^="nyc_mobile_care.html#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const targetId = this.getAttribute('href').split('#')[1];
+                    if (targetId) {
+                        // Navigate to the page with hash
+                        window.location.href = this.getAttribute('href');
+                    }
+                });
+            });
+            
+            console.log('Booking form initialization completed successfully!');
+            
+        } catch (error) {
+            console.error('Error during initialization:', error);
+            // Show a fallback message if JavaScript fails
+            const main = document.querySelector('main');
+            if (main && main.style.opacity === '0') {
+                main.style.opacity = '1';
+            }
+        }
+    });
+    
+    // Fallback to show content if CSS animation fails
+    setTimeout(function() {
+        const body = document.body;
+        if (body) {
+            body.classList.add('loaded');
+        }
+    }, 100);
+    </script>
+</body>
+</html>
